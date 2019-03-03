@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>slippry demo</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="slippry.min.js"></script>
+		<script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+		<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="slipprydemo.css">
+    <link rel="stylesheet" href="slippry.css">
+	</head>
+	<body>
+		<section class="demo_wrapper">
+			<article class="demo_block">
+				<h1 id="main-title">Demonstration of Slippry image slideshow</h1>
+				<a href="#glob" class='prev'></a><a href="#glob" class='next'></a>
+		        <a href="#glob" class='init'></a><a href="#glob" class='reset'></a><a href="#glob" class='reload'></a>
+		        <a href="#glob" class='stop'></a><a href="#glob" class='start'></a>
+			<ul id="demo1">
+				<li><a href="#slide1"> <img src="images/books/7nzbusrwc.jpg" alt=""></a></li>
+				<li><a href="#slide2"> <img src="images/books/7snail-derek.jpg" alt=""></a></li>
+				<li><a href="#slide3"> <img src="images/books/8caravan.jpg" alt=""></a></li>
+                <li><a href="#slide4"> <img src="images/books/8nzbus.aug2011.jpg" alt=""></a></li>
+                <li><a href="#slide5"> <img src="images/books/8nzbusbalmcover.jpg" alt=""></a></li>
+                <li><a href="#slide6"> <img src="images/books/8nzbusgunslinger.jpg" alt=""></a></li>
+                <li><a href="#slide7"> <img src="images/books/9bumblebee.jpg" alt=""></a></li>
+                <li><a href="#slide8"> <img src="images/books/9egg.jpg" alt=""></a></li>
+                <li><a href="#slide9"> <img src="images/books/9iceblock.jpg" alt=""></a></li>
+                <li><a href="#slide10"><img src="images/books/9kiwi.package.jpg" alt=""></a></li>
+                <li><a href="#slide11"><img src="images/books/9nzbusjul2010.jpg" alt=""></a></li>
+                <li><a href="#slide12"><img src="images/books/9nzbusmar2010.jpg" alt=""></a></li>
+                <li><a href="#slide13"><img src="images/books/9nzbusnov2010.jpg" alt=""></a></li>
+                <li><a href="#slide14"><img src="images/books/9vegemite.jpg" alt=""></a></li>
+                <li><a href="#slide15"><img src="images/books/9wrongside1.jpg" alt=""></a></li>
+                <li><a href="#slide16"><img src="images/books/9wrongside2.jpg" alt=""></a></li>
+                <li><a href="#slide17"><img src="images/books/9wrongside3.jpg" alt=""></a></li>
+                <li><a href="#slide18"><img src="images/books/9wrongside4.jpg" alt=""></a></li>
+                <li><a href="#slide19"><img src="images/books/9wrongside5.jpg" alt=""></a></li>
+                <li><a href="#slide20"><img src="images/books/9wrongside6.jpg" alt=""></a></li>
+                <li><a href="#slide21"><img src="images/books/home.jpg" alt=""></a></li>
+                <li><a href="#slide22"><img src="images/books/nzbus-dec.jan.jpg" alt=""></a></li>
+                <li><a href="#slide23"><img src="images/books/nzbus-march.jpg" alt=""></a></li>
+                <li><a href="#slide24"><img src="images/books/nzbus-may.jpg" alt=""></a></li>
+                <li><a href="#slide25"><img src="images/books/nzbus-october.jpg" alt=""></a></li>
+                <li><a href="#slide26"><img src="images/books/pearson.jpg" alt=""></a></li>
+                <li><a href="#slide27"><img src="images/books/pearson-crow.jpg" alt=""></a></li>
+                <li><a href="#slide28"><img src="images/books/pearson-eelgod.jpg" alt=""></a></li>
+                <li><a href="#slide29"><img src="images/books/pearson-freya.jpg" alt=""></a></li>
+                <li><a href="#slide30"><img src="images/books/pearson-pangu.jpg" alt=""></a></li>
+                <li><a href="#slide31"><img src="images/books/prodesign.jpg" alt=""></a></li>
+                
+			</ul>
+			</article>
+		</section>
+
+		<script>
+			$(function() {
+				var demo1 = $("#demo1").slippry({
+					// transition: 'fade',
+					// useCSS: true,
+					// speed: 1000,
+					// pause: 3000,
+					// auto: true,
+					// preload: 'visible',
+					// autoHover: false
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>
+	</body>
+</html>

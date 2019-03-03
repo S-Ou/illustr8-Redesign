@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bi_css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="blueimpcarouseldemo.css">
+    <title></title>
+</head>
+
+<body>
+    
+    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+    
+    <div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+    
+    <div id="links">
+        <a href="images/books/7nzbusrwc.jpg" title="">        <img src="images/books/7nzbusrwc.jpg" alt=""></a>
+        <a href="images/books/7snail-derek.jpg" title="">     <img src="images/books/7snail-derek.jpg" alt=""></a>
+        <a href="images/books/8caravan.jpg" title="">         <img src="images/books/8caravan.jpg" alt=""></a>
+        <a href="images/books/8nzbus.aug2011.jpg" title="">   <img src="images/books/8nzbus.aug2011.jpg" alt=""></a>
+        <a href="images/books/8nzbusbalmcover.jpg" title="">  <img src="images/books/8nzbusbalmcover.jpg" alt=""></a>
+        <a href="images/books/8nzbusgunslinger.jpg" title=""> <img src="images/books/8nzbusgunslinger.jpg" alt=""></a>
+        <a href="images/books/9bumblebee.jpg" title="">       <img src="images/books/9bumblebee.jpg" alt=""></a>
+        <a href="images/books/9egg.jpg" title="">             <img src="images/books/9egg.jpg" alt=""></a>
+        <a href="images/books/9iceblock.jpg" title="">        <img src="images/books/9iceblock.jpg" alt=""></a>
+        <a href="images/books/9kiwi.package.jpg" title="">    <img src="images/books/9kiwi.package.jpg" alt=""></a>
+        <a href="images/books/9nzbusjul2010.jpg" title="">    <img src="images/books/9nzbusjul2010.jpg" alt=""></a>
+        <a href="images/books/9nzbusmar2010.jpg" title="">    <img src="images/books/9nzbusmar2010.jpg" alt=""></a>
+        <a href="images/books/9nzbusnov2010.jpg" title="">    <img src="images/books/9nzbusnov2010.jpg" alt=""></a>
+        <a href="images/books/9vegemite.jpg" title="">        <img src="images/books/9vegemite.jpg" alt=""></a>
+        <a href="images/books/9wrongside1.jpg" title="">      <img src="images/books/9wrongside1.jpg" alt=""></a>
+        <a href="images/books/9wrongside2.jpg" title="">      <img src="images/books/9wrongside2.jpg" alt=""></a>
+        <a href="images/books/9wrongside3.jpg" title="">      <img src="images/books/9wrongside3.jpg" alt=""></a>
+        <a href="images/books/9wrongside4.jpg" title="">      <img src="images/books/9wrongside4.jpg" alt=""></a>
+        <a href="images/books/9wrongside5.jpg" title="">      <img src="images/books/9wrongside5.jpg" alt=""></a>
+        <a href="images/books/9wrongside6.jpg" title="">      <img src="images/books/9wrongside6.jpg" alt=""></a>
+        <a href="images/books/home.jpg" title="">             <img src="images/books/home.jpg" alt=""></a>
+        <a href="images/books/nzbus-dec.jan.jpg" title="">    <img src="images/books/nzbus-dec.jan.jpg" alt=""></a>
+        <a href="images/books/nzbus-march.jpg" title="">      <img src="images/books/nzbus-march.jpg" alt=""></a>
+        <a href="images/books/nzbus-may.jpg" title="">        <img src="images/books/nzbus-may.jpg" alt=""></a>
+        <a href="images/books/nzbus-october.jpg" title="">    <img src="images/books/nzbus-october.jpg" alt=""></a>
+        <a href="images/books/pearson.jpg" title="">          <img src="images/books/pearson.jpg" alt=""></a>
+        <a href="images/books/pearson-crow.jpg" title="">     <img src="images/books/pearson-crow.jpg" alt=""></a>
+        <a href="images/books/pearson-eelgod.jpg" title="">   <img src="images/books/pearson-eelgod.jpg" alt=""></a>
+        <a href="images/books/pearson-freya.jpg" title="">    <img src="images/books/pearson-freya.jpg" alt=""></a>
+        <a href="images/books/pearson-pangu.jpg" title="">    <img src="images/books/pearson-pangu.jpg" alt=""></a>
+        <a href="images/books/prodesign.jpg" title="">        <img src="images/books/prodesign.jpg" alt=""></a>
+    </div>
+    
+    <script src="bi_js/blueimp-gallery.min.js"></script>
+    
+    <script>
+        blueimp.Gallery(
+            document.getElementById('links').getElementsByTagName('a'),
+            {
+                container: '#blueimp-gallery-carousel',
+                carousel: true
+            }
+        );
+    </script>
+    
+    <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+* {
+    background-color: #ffffff;
+	font-size: 20px;
+	color: #7289da;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        background-color: #7289da;
+		font-size: 20px;
+		color: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    * {
+        background-color: #23272a;
+		font-size: 10px;
+		color: #ffffff
+    }
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'source-sans-pro', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+.demo_wrapper {
+	width: 50%;
+	margin: 0 auto;
+}
+@media only screen and (max-device-width: 800px), screen and (max-width: 800px) {
+  .demo_wrapper {
+    width: 80%;
+  }  
+}
+.demo_block {
+	width: 100%;
+}
