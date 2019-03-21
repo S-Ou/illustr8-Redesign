@@ -3,7 +3,7 @@ $(function() {
         // transition: 'fade',
         // useCSS: true,
         // speed: 1000,
-        // pause: 3000,
+        // pause: 10000,
         // auto: true,
         // preload: 'visible',
         // autoHover: false
