@@ -269,15 +269,13 @@ body {
 	color: black;
 }
 
-@media only screen and (max-width : 900px ){
+@media only screen and (max-width: 768px) {
 	#main {
         margin: 10px 4%;
-/*		text-align: center;*/
     }
     
     #footer {
         margin: 45px 4% 15px 4%;
-		text-align: center;
     }
 	
 	#clients img {
