@@ -222,6 +222,7 @@
     min-width: 4.2em;
     height: 100%;
     z-index: 33;
+	background-color: rgba(255, 255, 255, 0);
 }
 
 .sy-controls li.sy-prev {
@@ -307,15 +308,21 @@
     bottom: 2em;
     z-index: 12;
     left: 50%;
+	city: 0;
+	background-color: (255, 255, 255, 0);
 }
 
 .sy-caption-wrap .sy-caption {
     position: relative;
     left: -50%;
-    background-color: rgba(0, 0, 0, 0.54);
+    background-color: rgba(25, 133, 161, 0.4);
     color: #fff;
     padding: 0.4em 1em;
     border-radius: 1.2em;
+}
+
+.sy-caption-wrap {
+	background-color: rgba(255, 255, 255, 0)
 }
 
 .sy-caption-wrap .sy-caption a:link,

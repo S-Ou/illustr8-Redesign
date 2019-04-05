@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Illustr8</title>
-<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<title>Illustr8</title>
+	<link rel="icon" href="img/splat.png">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body>
-	<div id="header">
-		<div id="logo"><span id="logo-span"><div id="logo-container">
-			<a href="index.html"><img src="img/logo.png" alt="illustr8"></a>
-		</div></span></div>
-		<nav id="nav">
-			<div id="navcontainer">
-				<ul>
-	<!--
-					<li><a href="index.html">
-						<div class="bubble">Home</div>
-					</a></li>
-	-->
-					<li><a href="bio.html">
-						<div class="bubble">Bio</div>
-					</a></li>
-					<li><a href="clients.html">
-						<div class="bubble">Clients</div>
-					</a></li>
-					<li><a href="art.html">
-						<div class="bubble">Art</div>
-					</a></li>
-				</ul>
-			</div>
-		</nav>
+<body>	
+	<div id="nav-placeholder">
 	</div>
+
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("navbar.html");
+	});
+	</script>
 	
 	<div id="main">
 		
@@ -48,6 +33,10 @@
 		<b>Contact me:</b><br>
 		Mobile: +64 21 742 058<br>
 		Email: <a href="mailto:james@illustr8.co.nz">james@illustr8.co.nz</a>
+	</div>
+	
+	<div id="portrait">
+		<img src="img/portraits/Self.jpg" alt="Self-portrait">
 	</div>
 	
 	<div id="footer">

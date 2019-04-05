@@ -4,27 +4,23 @@
     <meta charset="utf-8">
     <title>Books and Magazines</title>
     <link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="../img/splat.png">
     <link rel="stylesheet" href="../slippry/slippry.css">
-    
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="../slippry/slippry.min.js"></script>
-<!--    <script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>-->
+<!--	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
 </head>
 
-<body>
-	<div id="header">
-		<div id="logo"><span id="logo-span"><div id="logo-container">
-			<a href="index.html"><img src="../img/logo.png" alt="illustr8"></a>
-		</div></span></div>
-		<nav id="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="bio.html">Bio</a></li>
-				<li><a href="clients.html">Clients</a></li>
-				<li><a href="art.html">Art</a></li>
-			</ul>
-		</nav>
+<body>	
+	<div id="nav-placeholder">
 	</div>
+
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("../navbar.html");
+	});
+	</script>	
+	
 	
 	<div id="main">
 		

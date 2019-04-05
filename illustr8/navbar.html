@@ -1,0 +1,31 @@
+<div id="header">
+	<div id="logo"><span id="logo-span"><div id="logo-container">
+		<a href="index.html"><img src="img/i.png" alt="illustr8"></a>
+	</div></span></div>
+	<nav id="nav">
+		<div id="navcontainer">
+			<ul>
+<!--
+				<li><a href="index.html">
+					<div class="bubble">Home</div>
+				</a></li>
+-->
+				<li><a href="bio.html">
+					<div class="bubble">Bio</div>
+				</a></li>
+				<li><a href="clients.html">
+					<div class="bubble">Clients</div>
+				</a></li>
+				<li><a href="art.html">
+					<div class="bubble">Art</div>
+				</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<script>
+	$('#logo-container img').on("error", function() {
+	    $(this).attr('src', '../img/i.png');
+	});
+</script>
