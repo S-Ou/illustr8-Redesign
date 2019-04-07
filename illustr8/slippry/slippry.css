@@ -90,7 +90,7 @@
 
 /* added to the original element calling slippry */
 .sy-box.sy-loading {
-    background: url("/images/sy-loader.gif") 50% 50% no-repeat;
+    background: url("../slippry/images/sy-loader.gif") 50% 50% no-repeat;
     -webkit-background-size: 32px 32px;
     background-size: 32px;
     min-height: 40px;
@@ -310,6 +310,8 @@
     left: 50%;
 	city: 0;
 	background-color: (255, 255, 255, 0);
+	
+	opacity: 0; /* "No more captions" */
 }
 
 .sy-caption-wrap .sy-caption {
