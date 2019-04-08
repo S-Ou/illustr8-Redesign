@@ -18,7 +18,7 @@ function imgload(folder) {
 				var imgcode = '<img src="' + "../img/" + folder + "/" + images + '" alt="' + images + '">';
 				var code = '<li><a href="#slide' + x + '">' + imgcode + '</a></li>'
 
-				 console.log(code);
+				console.log(code);
 
 				$('#slippry-gallery').append(code);
 

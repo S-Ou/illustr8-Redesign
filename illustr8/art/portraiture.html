@@ -1,11 +1,64 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Portraiture</title>
-<link rel="stylesheet" href="../style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" charset="utf-8">
+    <title>Portraiture</title>
+    <link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="../img/splat.png">
+    <link rel="stylesheet" href="../slippry/slippry.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="../slippry/slippry.min.js"></script>
 </head>
 
 <body>
+	<div id="nav-placeholder">
+	</div>
+
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("navbar.html");
+	});
+	</script>	
+	
+	
+	<div id="main">
+		
+		<div class="ht">
+			<h1>Art</h1>
+			<h3>Portraiture</h3>
+		</div>
+		
+		<div id="artnav">
+			<li><a href="advertising.html">Advertising</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="editorial.html">Editorial</a></li>
+			<li><a href="linework.html">Linework</a></li>
+			<li><a href="portraiture.html" class="active">Portraiture</a></li>
+			<li><a href="storyboards.html">Storyboards</a></li>
+			<li><a href="more.html">Other</a></li>
+		</div>
+		
+        <div class="slippry">
+            <section class="wrapper">
+                <article class="block">
+                    <a href="#glob" class="prev"></a><a href="#glob" class="next"></a>
+                    <a href="#glob" class="init"></a><a href="#glob" class="reset"></a><a href="#glob" class="reload"></a>
+                    <a href="#glob" class="stop"></a><a href="#glob" class="start"></a>
+                    <ul id="slippry-gallery"></ul>
+                </article>
+            </section>
+        </div>
+        
+		<script src="imageloader.js"></script>
+		<script>imgload("portraiture")</script>
+		
+
+        
+	</div>
+
+	<div id="footer">
+		©Copyright 2019 All images and concepts on this site are protected under international copyright laws
+	</div>
+	
 </body>
 </html>
