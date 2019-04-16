@@ -24,7 +24,7 @@ function imgload(folder) {
 
 	var arrayLength = names.length;
 	for (var i = 0; i < arrayLength; i++) {
-		images = names[i];
+		images = names[i].toLowerCase();
 
 		var img = "../img/" + folder + "/" + images;
 		var code = '<a href="' + img + '" data-ngThumb="' + img + '"></a>';
