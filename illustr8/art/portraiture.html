@@ -5,9 +5,9 @@
     <title>Portraiture</title>
     <link rel="stylesheet" href="../style.css">
 	<link rel="icon" href="../img/splat.png">
-    <link rel="stylesheet" href="../slippry/slippry.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="../slippry/slippry.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
 </head>
 
 <body>
@@ -38,19 +38,16 @@
 			<li><a href="more.html">Other</a></li>
 		</div>
 		
-        <div class="slippry">
-            <section class="wrapper">
-                <article class="block">
-                    <a href="#glob" class="prev"></a><a href="#glob" class="next"></a>
-                    <a href="#glob" class="init"></a><a href="#glob" class="reset"></a><a href="#glob" class="reload"></a>
-                    <a href="#glob" class="stop"></a><a href="#glob" class="start"></a>
-                    <ul id="slippry-gallery"></ul>
-                </article>
-            </section>
-        </div>
+        <div id="nanogallery2"
+			data-nanogallery2 = '{
+			    "thumbnailWidth":   300,
+			    "thumbnailHeight":  "auto"
+			}'
+		></div>
+
         
 		<script src="imageloader.js"></script>
-		<script>imgload("portraiture")</script>
+		<script>imgload("portraits")</script>
 		
 
         
