@@ -5,8 +5,8 @@
     <title>Illustr8 | Advertising</title>
     <link rel="stylesheet" href="../style.css">
 	<link rel="icon" href="../img/splat.png">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> <!-- jQuery -->
+    <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css"> <!-- nanogallery2 external code and stylesheet -->
     <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
 </head>
 
@@ -28,7 +28,7 @@
 			<h3>Advertising</h3>
 		</div>
 		
-		<div id="artnav">
+		<div id="artnav"> <!-- Art navigation -->
 			<li><a href="advertising.html" class="active">Advertising</a></li>
 			<li><a href="books.html">Books</a></li>
 			<li><a href="editorial.html">Editorial</a></li>
@@ -43,10 +43,10 @@
 			    "thumbnailWidth":   300,
 			    "thumbnailHeight":  "auto"
 			}'
-		></div>
+		></div> <!-- nanogallery2 wrapper -->
 
-		<script src="imageloader.js"></script>
-		<script>imgload("advertising")</script>
+		<script src="imageloader.js"></script> <!-- Automatic image loader script -->
+		<script>imgload("advertising")</script> <!-- Once hosted on a VPS, replace 'imgload()' with 'imgloadauto()' for automatic image loading direct from folder (note: does not work on GitHub pages) -->
 
        
 	</div>
